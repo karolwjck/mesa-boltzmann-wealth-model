@@ -7,6 +7,12 @@ class MoneyAgent(mesa.Agent):
     def __init__(self, unique_id, model):
         super().__init__(unique_id, model)
         self.wealth = 1
+        
+        
+    def step(self):
+        # The agent's step will go here.
+        # For demonstration purposes we will print the agent's unique_id
+        print("Hi, I am agent " + str(self.unique_id) + ".")
 
 
 class MoneyModel(mesa.Model):
@@ -17,3 +23,8 @@ class MoneyModel(mesa.Model):
         # Create agents
         for i in range(self.num_agents):
             a = MoneyAgent(i, self)
+    
+    
+    def step(self):
+        """Advance the model by one step."""
+        self.schedule.step()
