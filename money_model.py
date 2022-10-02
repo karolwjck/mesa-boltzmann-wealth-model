@@ -10,9 +10,11 @@ class MoneyAgent(mesa.Agent):
         
         
     def step(self):
-        # The agent's step will go here.
-        # For demonstration purposes we will print the agent's unique_id
-        print("Hi, I am agent " + str(self.unique_id) + ".")
+        if self.wealth == 0:
+            return
+        other_agent = self.random.choice(self.model.schedule.agents)
+        other_agent.wealth += 1
+        self.wealth -= 1
 
 
 class MoneyModel(mesa.Model):
