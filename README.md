@@ -11,10 +11,22 @@ The tutorial model is a very simple simulated agent-based economy, drawn from ec
 ![This is an image](/assets/gif.gif)
 
 ## How to run it?
+First install mesa
+
+```
+    $ pip install mesa
+```
+
+Secondly install the requirements
+
+```
+    $ pip install -r requirements.txt
+```
+
 To launch the interactive server, and run the application type in the following (keeping in mind you're in the correct directory)
 
 ```
-    $ python3 src/run.py
+    $ python src/run.py
 ```
 
 ## FAQ
