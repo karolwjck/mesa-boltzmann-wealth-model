@@ -9,6 +9,11 @@ The tutorial model is a very simple simulated agent-based economy, drawn from ec
 3. At every step of the model, an agent gives 1 unit of money (if they have it) to some other agent.
 
 ## How to run it?
+To launch the interactive server, and run the application type in the following (keeping in mind you're in the correct directory)
+
+```
+    $ python3 src/run.py
+```
 
 ## FAQ
 **What if my browser doesn't open automatically when running run.py?**
@@ -16,3 +21,10 @@ The tutorial model is a very simple simulated agent-based economy, drawn from ec
 
 
 ## Additional information
+
+[Agent-based model, Wikipedia](https://en.wikipedia.org/wiki/Agent-based_model)
+
+[Milakovic, M. A Statistical Equilibrium Model of Wealth Distribution. February, 2001.](https://editorialexpress.com/cgi-bin/conference/download.cgi?db_name=SCE2001&paper_id=214)
+
+[Dragulescu, A and Yakovenko, V. Statistical Mechanics of Money, Income, and Wealth: A Short Survey. November, 2002](http://arxiv.org/pdf/cond-mat/0211175v1.pdf)
+
