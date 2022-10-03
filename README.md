@@ -1,5 +1,5 @@
 # mesa-boltzmann-wealth-model
-(Mesa)[https://github.com/projectmesa/mesa] is a Python framework for (agent-based modeling)[https://en.wikipedia.org/wiki/Agent-based_model]. 
+[Mesa](https://github.com/projectmesa/mesa) is a Python framework for [agent-based modeling](https://en.wikipedia.org/wiki/Agent-based_model). 
 
 ## How it works?
 The tutorial model is a very simple simulated agent-based economy, drawn from econophysics and presenting a statistical mechanics approach to wealth distribution [Dragulescu2002]. The rules of our tutorial model:
