@@ -10,4 +10,6 @@ The tutorial model is a very simple simulated agent-based economy, drawn from ec
 
 ## How to run it?
 
+## FAQ
+
 ## Additional information
