@@ -11,5 +11,8 @@ The tutorial model is a very simple simulated agent-based economy, drawn from ec
 ## How to run it?
 
 ## FAQ
+###### **What if my browser doesn't open automatically when running run.py?**
+###### Paste the following URL in your browser http://127.0.0.1:8521/. When the visualization loads, press Reset, then Run.
+
 
 ## Additional information
