@@ -8,6 +8,8 @@ The tutorial model is a very simple simulated agent-based economy, drawn from ec
 2. All agents begin with 1 unit of money.
 3. At every step of the model, an agent gives 1 unit of money (if they have it) to some other agent.
 
+![This is an image](/assets/gif.gif)
+
 ## How to run it?
 To launch the interactive server, and run the application type in the following (keeping in mind you're in the correct directory)
 

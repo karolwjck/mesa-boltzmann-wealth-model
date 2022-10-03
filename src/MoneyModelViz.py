@@ -25,14 +25,14 @@ server = mesa.visualization.ModularServer(MoneyModel,
                        "Mesa Boltzmann Wealth Model",
                        {"N":100, "width":10, "height":10})
 
-chart = mesa.visualization.ChartModule([{"Label": "Gini",
-                      "Color": "Black"}],
-                    data_collector_name='datacollector')
+# chart = mesa.visualization.ChartModule([{"Label": "Gini",
+#                       "Color": "Black"}],
+#                     data_collector_name='datacollector')
 
-server = mesa.visualization.ModularServer(MoneyModel,
-                       [grid, chart],
-                       "Money Model",
-                       {"N":100, "width":10, "height":10})
+# server = mesa.visualization.ModularServer(MoneyModel,
+#                        [grid, chart],
+#                        "Money Model",
+#                        {"N":100, "width":10, "height":10})
 
 server.port = 8521 # The default
 server.launch()
