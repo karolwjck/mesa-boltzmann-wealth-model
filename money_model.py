@@ -45,6 +45,7 @@ class MoneyModel(mesa.Model):
         self.num_agents = N
         self.grid = mesa.space.MultiGrid(width, height, True)
         self.schedule = RandomActivation(self)
+        self.running = True
         # Create agents
         for i in range(self.num_agents):
             a = MoneyAgent(i, self)

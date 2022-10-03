@@ -1,5 +1,6 @@
 from money_model import *
-import numpy as np
+# import numpy as np
+import csv 
 from matplotlib import pyplot as plt
 
 # model = MoneyModel(50, 10, 10)
@@ -25,3 +26,22 @@ from matplotlib import pyplot as plt
 # gini.plot()
 
 # gini.to_csv("model_data.csv")
+
+params = {"width": 10, "height": 10, "N": range(10, 500, 10)}
+
+results = mesa.batch_run(
+    MoneyModel,
+    parameters=params,
+    iterations=5,
+    max_steps=100,
+    number_processes=1,
+    data_collection_period=1,
+    display_progress=True,
+)
+
+keys = results[0].keys()
+with open('batch_results.csv', 'w', newline='') as output_file:
+    dict_writer = csv.DictWriter(output_file, keys)
+    dict_writer.writeheader()
+    dict_writer.writerows(results)
+
