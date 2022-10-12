@@ -1,8 +1,8 @@
 # mesa-boltzmann-wealth-model
-[Mesa](https://github.com/projectmesa/mesa) is a Python framework for [agent-based modeling](https://en.wikipedia.org/wiki/Agent-based_model). 
+[Mesa](https://github.com/projectmesa/mesa) is a Python framework for [agent-based modeling](https://en.wikipedia.org/wiki/Agent-based_model).
 
 ## How it works?
-The tutorial model is a very simple simulated agent-based economy, drawn from econophysics and presenting a statistical mechanics approach to wealth distribution [Dragulescu2002]. The rules of our tutorial model:
+This model is a very simple simulated agent-based economy, drawn from econophysics and presenting a statistical mechanics approach to wealth distribution [Dragulescu2002]. The rules of this model are as follows:
 
 1. There are some number of agents.
 2. All agents begin with 1 unit of money.
@@ -28,6 +28,11 @@ To launch the interactive server, and run the application type in the following 
 ```
     $ python src/run.py
 ```
+
+In order to interact with the application you can use the following buttons on the screen:
+- Start: To start the application running at a pace spcified by the frames slider
+- Step: Iterate over one step of the Multi-Agent System simulation
+- Reset: Reset both the Multi-Agent System simulation grid and the Gini chart
 
 ## FAQ
 **What if my browser doesn't open automatically when running run.py?**
